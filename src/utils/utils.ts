@@ -1,4 +1,5 @@
 import { toast } from 'react-toastify';
+
 import type { ToastPosition } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

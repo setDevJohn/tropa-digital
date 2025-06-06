@@ -1,5 +1,6 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { Login } from "../pages/Login";
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+
+import { Login } from '../pages/Login';
 
 export const AppRouter = () => (
   <BrowserRouter>
@@ -8,4 +9,4 @@ export const AppRouter = () => (
       <Route path="/login" element={<Login />} />
     </Routes>
   </BrowserRouter>
-)
+);

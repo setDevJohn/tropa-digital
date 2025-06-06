@@ -1,7 +1,8 @@
-import { ToastContainer } from "react-toastify"
-import { AppRouter } from "./routes"
-import { GlobalStyle } from "./styles/globalStyles"
-import { ThemeStyleProvider } from "./styles/theme"
+import { ToastContainer } from 'react-toastify';
+
+import { AppRouter } from './routes';
+import { GlobalStyle } from './styles/globalStyles';
+import { ThemeStyleProvider } from './styles/theme';
 
 export const App = () => {
   return (
@@ -10,5 +11,5 @@ export const App = () => {
       <GlobalStyle />
       <ToastContainer />
     </ThemeStyleProvider>
-  )
-}
+  );
+};
