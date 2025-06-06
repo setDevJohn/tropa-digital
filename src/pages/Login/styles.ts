@@ -28,6 +28,10 @@ export const LoginFormContainer = styled.div`
   flex-direction: column;
   flex: 1;
   gap: 35px;
+  padding: 40px 20px;
+`;
+
+export const TitleGroup = styled.div`
 `;
 
 export const LoginForm = styled.form`
