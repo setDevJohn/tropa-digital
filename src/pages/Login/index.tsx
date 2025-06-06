@@ -55,8 +55,18 @@ export const Login = () => {
   };
 
   const formFields = [
-    { label: 'E-mail', name: 'login', placeholder: 'seunome@seuservidor.com', type: 'email' },
-    { label: 'Senha', name: 'password', placeholder: 'Digite aqui', type: 'password' },
+    {
+      label: 'E-mail',
+      name: 'login', 
+      placeholder: 'seunome@seuservidor.com', 
+      type: 'email'
+    },
+    { 
+      label: 'Senha', 
+      name: 'password',
+      placeholder: 'Digite aqui',
+      type: 'password',
+    },
   ];
 
   return (
@@ -89,6 +99,7 @@ export const Login = () => {
                 error={fieldsError.includes(name)}
                 value={formData[name as keyof typeof formData]}
                 placeholder={placeholder}
+                showTogglePasswordIcon={name === 'password'}
                 handleChange={handleInputChange}
               />
             ))}
