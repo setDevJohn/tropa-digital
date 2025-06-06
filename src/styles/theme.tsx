@@ -1,9 +1,12 @@
-import type { ReactNode } from 'react';
 import { ThemeProvider } from 'styled-components';
+
+import type { ReactNode } from 'react';
 
 export interface IVariables {
   primaryColor: string;
   secondaryColor: string;
+  inputBackground: string;
+  lightColorFont: string;
   primaryFont: string;
   secondaryFont: string;
   title: string;
@@ -18,9 +21,11 @@ export interface IVariables {
 const variables: IVariables = {
   primaryColor: '#CC6237',
   secondaryColor: '#394b54',
+  inputBackground: '#F6F6F6',
+  lightColorFont: '#657593',
   primaryFont: '"Inter", sans-serif',
   secondaryFont: '"Poppins", sans-serif',
-  title: '23px',
+  title: '26px',
   subtitle: '20px',
   bigSize: '16px',
   menuSize: '14px',
