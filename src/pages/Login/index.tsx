@@ -46,11 +46,6 @@ export const Login = () => {
       ]);
     }
 
-    if (formData.password.length < 6) {
-      toastWarn('A senha deve ter no mínimo 6 caracteres');
-      return setFieldsError(['password']);
-    }
-
     navigate('/events');
   };
 
@@ -59,7 +54,7 @@ export const Login = () => {
       label: 'E-mail',
       name: 'login', 
       placeholder: 'seunome@seuservidor.com', 
-      type: 'email'
+      type: 'text'
     },
     { 
       label: 'Senha', 

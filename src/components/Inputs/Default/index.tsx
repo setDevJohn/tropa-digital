@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { FiEye } from 'react-icons/fi';
-import { FiEyeOff } from 'react-icons/fi';
+import { FaEye } from 'react-icons/fa';
+import { FaEyeSlash } from 'react-icons/fa';
 import { useTheme } from 'styled-components';
 
 import { DefaultInputContainer, EyeButton, InputWrapper } from './styles';
@@ -53,8 +53,8 @@ export const DefatultInput = ({
       {isPasswordType && showTogglePasswordIcon && (
         <EyeButton onClick={() => setShowPassword(prev => !prev)} type="button">
           {showPassword 
-            ? <FiEyeOff size={20} fill={theme.primaryColor} /> 
-            : <FiEye size={20} fill={theme.primaryColor} />
+            ? <FaEyeSlash size={21} fill={theme.primaryColor} /> 
+            : <FaEye size={20} fill={theme.primaryColor} />
           }
         </EyeButton>
       )}
