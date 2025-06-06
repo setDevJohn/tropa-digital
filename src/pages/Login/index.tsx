@@ -16,6 +16,7 @@ import {
   LoginForm,
   LoginFormContainer,
   LoginImage,
+  LogoContainer,
   TitleGroup
 } from './styles';
 
@@ -62,11 +63,13 @@ export const Login = () => {
     <LoginContainer>
       <LoginContent>
         <LoginFormContainer>
-          <StyledImage 
-            src={logoImage}
-            alt="Logo Tropa Digital"
-            $width="160px"
-          />
+          <LogoContainer>
+            <StyledImage 
+              src={logoImage}
+              alt="Logo Tropa Digital"
+              $width="160px"
+            />
+          </LogoContainer>
 
           <TitleGroup>
             <Title> Bem-vindo de volta </Title>

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { device } from '../../styles/responsive';
+
 export const LoginContainer = styled.main`
   display: flex;
   justify-content: center;
@@ -23,6 +25,12 @@ export const LoginContent = styled.div`
   max-width: 755px;
 `;
 
+export const LogoContainer = styled.div`
+  @media ${device.mobileM} {
+    margin: 0 auto;
+  }
+`;
+
 export const LoginFormContainer = styled.div`
   display: flex;  
   flex-direction: column;
@@ -32,6 +40,11 @@ export const LoginFormContainer = styled.div`
 `;
 
 export const TitleGroup = styled.div`
+  @media ${device.mobileM} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const LoginForm = styled.form`
@@ -46,6 +59,10 @@ export const ImageContainer = styled.div`
   flex: 1;
   background-color: ${({ theme }) => theme.primaryColor};
   border-radius: 20px;
+
+  @media ${device.tabletS} {
+    display: none;
+  }
 `;
 
 export const LoginImage = styled.img`
