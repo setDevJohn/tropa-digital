@@ -5,7 +5,7 @@ import { DefatultInput } from '../Default';
 
 import { SearchContainer, SearchIconContainer } from './styles';
 
-export const SearchInput = () => {
+export const SearchInput = ({ placeholder }: { placeholder: string }) => {
   const [search, setSearch] = useState('');
 
   return (
@@ -14,7 +14,7 @@ export const SearchInput = () => {
         name='search'
         value={search}
         handleChange={({ value }) => setSearch(value)}
-        placeholder='Buscar eventos'
+        placeholder={placeholder}
         style={{ width: '200px', paddingLeft: '40px' }}
       />
 
