@@ -1,0 +1,1 @@
+export const Teams = () => <h1></h1>;
