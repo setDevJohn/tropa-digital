@@ -5,6 +5,7 @@ import type { ReactNode } from 'react';
 export interface IVariables {
   primaryColor: string;
   secondaryColor: string;
+  buttonLightColor: string;
   inputBackground: string;
   lightColorFont: string;
   primaryFont: string;
@@ -21,6 +22,7 @@ export interface IVariables {
 const variables: IVariables = {
   primaryColor: '#CC6237',
   secondaryColor: '#394b54',
+  buttonLightColor: '#F5F5F5',
   inputBackground: '#F6F6F6',
   lightColorFont: '#657593',
   primaryFont: '"Inter", sans-serif',
