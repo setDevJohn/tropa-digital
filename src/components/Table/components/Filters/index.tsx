@@ -4,10 +4,10 @@ import { SearchInput } from '../../../Inputs';
 
 import { ButtonContainer } from './styles';
 
-export const TableFilters = () => {
+export const TableFilters = ({ placeholder }: {placeholder: string}) => {
   return (
     <ButtonContainer>
-      <SearchInput placeholder='Buscar eventos'/>
+      <SearchInput placeholder={placeholder}/>
 
       <DefaultButton
         text="Inserir novo"

@@ -13,7 +13,7 @@ export const Events = () => {
 
   return (
     <>
-      <TableFilters />
+      <TableFilters placeholder='Buscar eventos'/>
 
       <Table tableHeader={tableHeader} tableBody={tableBody}/>
       
