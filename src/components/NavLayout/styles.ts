@@ -23,13 +23,6 @@ export const ContentContainer = styled.main`
   }
 `;
 
-export const TitleContainer = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100% ;
-  height: 38px;
-`;
-
 export const WelcomeText = styled.p`
   color: #00000099;
   font-size: ${({ theme }) => theme.bigSize};

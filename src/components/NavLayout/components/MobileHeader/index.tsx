@@ -3,13 +3,12 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import { MobileHeaderContainer } from './styles';
 
 interface IMobileHeader {
-  sideBar: boolean;
   setSideBar: (status: boolean) => void;
 }
 
-export function MobileHeader ({ sideBar, setSideBar }: IMobileHeader) {
+export function MobileHeader ({ setSideBar }: IMobileHeader) {
   return (
-    <MobileHeaderContainer $open={sideBar}>
+    <MobileHeaderContainer>
       <RxHamburgerMenu size={30} onClick={() => setSideBar(true)}/>
     </MobileHeaderContainer>
   );

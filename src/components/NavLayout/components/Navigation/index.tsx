@@ -8,7 +8,7 @@ import userImage from '../../../../assets/images/user.png';
 import { StyledImage } from '../../../../styles/globalComponents';
 import { navList } from '../../navList';
 
-import { ConfigContainer, ConfigList, Icon, Item, ItemConfig, MenuSpan, NavigationContainer, NavigationList, ProfileContainer, Separate, UserContainer, UserContent, UserName, UserSpan } from './styles';
+import { ConfigContainer, ConfigList, Icon, Item, ItemConfig, MenuSpan, NavigationContainer, NavigationList, SideBarContainer, Separate, UserContainer, UserContent, UserName, UserSpan } from './styles';
 
 type TSideBar = {
   sideBar: boolean
@@ -25,7 +25,7 @@ export const Navigation = ({ sideBar, setSideBar }: TSideBar) => {
   }
 
   return (
-    <ProfileContainer $open={sideBar}>
+    <SideBarContainer $open={sideBar}>
       <Icon as={RxCross2} size={30} onClick={() => setSideBar(false)}/>
 
       <StyledImage 
@@ -79,6 +79,6 @@ export const Navigation = ({ sideBar, setSideBar }: TSideBar) => {
           </ItemConfig>
         </ConfigList>
       </ConfigContainer>
-    </ProfileContainer>
+    </SideBarContainer>
   );
 };

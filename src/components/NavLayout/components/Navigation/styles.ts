@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { device } from '../../../../styles/responsive';
 
-export const ProfileContainer = styled.div<{$open: boolean}>`
+export const SideBarContainer = styled.div<{$open: boolean}>`
   display: flex;
   flex-direction: column;
   align-items: center;

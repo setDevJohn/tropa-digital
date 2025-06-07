@@ -14,19 +14,14 @@ export const NavLayout = () => {
   const location = useLocation();
   const title = navList.find(({ path }) => path === location.pathname)?.pageName;
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  //   setTimeout(() => setSideBar(false), 1000);
-  // },[]);
-
   return (
     <LayoutContainer>
       <Navigation sideBar={sideBar} setSideBar={setSideBar}/>
 
       <ContentContainer>
-        <WelcomeText>Bem vindo de volta, <span>Kaique Steck</span></WelcomeText>
+        <MobileHeader setSideBar={setSideBar} />
         
-        <MobileHeader sideBar={!sideBar} setSideBar={setSideBar} />
+        <WelcomeText>Bem vindo de volta, <span>Kaique Steck</span></WelcomeText>
 
         <Title $small>{title}</Title>
 
