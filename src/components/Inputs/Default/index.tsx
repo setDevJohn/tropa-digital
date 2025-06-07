@@ -5,6 +5,7 @@ import { useTheme } from 'styled-components';
 
 import { DefaultInputContainer, EyeButton, InputWrapper } from './styles';
 
+import type { CSSObject } from 'styled-components';
 import type { DefaultTheme } from 'styled-components/dist/types';
 
 export type HandleChangeProps = {
@@ -20,6 +21,7 @@ export interface IDefatultInput {
   handleChange: ({ name, value }: HandleChangeProps) => void;
   showTogglePasswordIcon?: boolean;
   error?: boolean
+  style?: CSSObject
 }
 
 export const DefatultInput = ({ 
@@ -29,7 +31,8 @@ export const DefatultInput = ({
   placeholder,
   handleChange,
   showTogglePasswordIcon = false,
-  error
+  error,
+  style,
 }: IDefatultInput
 ) => {
   const [showPassword, setShowPassword] = useState(false);
@@ -47,6 +50,7 @@ export const DefatultInput = ({
         $error={error}
         placeholder={placeholder}
         type={inputType}
+        style={style}
         onChange={({ target: { name, value } }) => handleChange({ name, value })}
       />
 
