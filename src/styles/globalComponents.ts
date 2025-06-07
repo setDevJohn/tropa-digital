@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Title = styled.h1<{$small?: boolean}>`
   color: ${({ theme }) => theme.primaryColor};
   font-size: ${({ theme, $small }) => $small ? theme.subtitle : theme.title};
-  font-weight: ${({ $small }) => $small ? 500 : 700};
+  font-weight:  700;
   width: fit-content;
 `;
 
