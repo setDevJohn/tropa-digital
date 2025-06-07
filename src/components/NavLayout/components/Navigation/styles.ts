@@ -11,10 +11,9 @@ export const ProfileContainer = styled.div<{$open: boolean}>`
   height: 100%;
   overflow: hidden;
   transition: all 0.4s ease;
-  /* width: 215px; */
   padding: 30px 15px;
   
-  @media ${device.mobileM} {
+  @media ${device.tablet} {
     position: absolute;
     inset: 0;
     z-index: 2;
@@ -31,7 +30,7 @@ export const Icon = styled.div`
   top: 15px;
   display: none;
 
-  @media ${device.mobileM} {
+  @media ${device.tablet} {
     display: block;
   }
 `;
@@ -79,11 +78,6 @@ export const Item = styled.li<{$active: boolean}>`
 
   &:hover {
     background-color: ${({ $active, theme }) => !$active && `${theme.primaryColor}60`};
-  }
-
-  @media ${device.mobileM} {
-    font-size: 2rem;
-    padding: 6px 8px;
   }
 `;
 

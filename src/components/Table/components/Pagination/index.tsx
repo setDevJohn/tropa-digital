@@ -26,9 +26,10 @@ export const Pagination = () => {
 
       {[1, 2, 3].map(page => (
         <DefaultButton 
+          key={page}
+          round
           text={page.toString()}
           width='fit-content'
-          style={{ borderRadius: '50%', padding: '15px 20px' }}
           action={() => setCurrentPage(page)} 
           secondary={page !== currrentPage}
         />

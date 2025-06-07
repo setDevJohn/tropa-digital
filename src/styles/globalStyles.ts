@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import { device } from './responsive';
+
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -15,6 +17,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Roboto", sans-serif;
     font-size: ${({ theme }) => theme.normalSize};
     font-weight: 400;
+
+    @media ${device.mobileM} {
+      font-size: 65.75%;
+    }
   }
 
   a {

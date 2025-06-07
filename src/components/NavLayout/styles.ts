@@ -6,7 +6,7 @@ export const LayoutContainer = styled.div`
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
 `;
 
 export const ContentContainer = styled.main`
@@ -51,4 +51,8 @@ export const PageContainer = styled.div`
   margin: 30px 0;
   width: 100%;
   max-height: 100svh;
+
+  @media ${device.mobileM} {
+    padding: 15px;
+  }
 `;

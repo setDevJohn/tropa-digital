@@ -15,7 +15,7 @@ export const SearchInput = ({ placeholder }: { placeholder: string }) => {
         value={search}
         handleChange={({ value }) => setSearch(value)}
         placeholder={placeholder}
-        style={{ width: '200px', paddingLeft: '40px' }}
+        style={{ paddingLeft: '40px' }}
       />
 
       <SearchIconContainer src={searchIcon} alt='Ícone de pesquisa'/>

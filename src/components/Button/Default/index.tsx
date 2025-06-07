@@ -9,6 +9,7 @@ interface IDefaultButton {
   action?: () => void;
   width?: string;
   icon?: string;
+  round?: boolean;
   secondary?: boolean;
   style?: CSSObject
 }
@@ -18,6 +19,7 @@ export const DefaultButton = ({
   action,
   width,
   icon,
+  round,
   secondary,
   style
 }: IDefaultButton) => {
@@ -27,6 +29,7 @@ export const DefaultButton = ({
       onClick={() => action?.()}
       $secondary={secondary}
       type={action ? 'button' : 'submit'}
+      $round={round}
       style={style}
     >
       {icon && <StyledImage src={icon}/>}
